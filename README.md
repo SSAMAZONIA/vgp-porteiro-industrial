@@ -1,30 +1,33 @@
-﻿# VGP Porteiro Industrial (Camada Bronze)
+﻿# 🥉 VGP Porteiro Industrial
 
-## O que faz
-- Varre: Google Drive (G:\Meu Drive) + Desktop + Documents
-- Gera manifesto append-only: `scan_out\catalog.jsonl`
-- Mantém checkpoint/idempotência: `scan_out\state.json`
-- Pitstop a cada 30 min: `scan_out\pitstop_status.txt` e `scan_out\pitstop_status.json`
-- Log de erros (permissão/arquivo): `scan_out\errors.jsonl`
+![Version](https://img.shields.io/badge/version-v1.0.0-blue)
+![Layer](https://img.shields.io/badge/layer-Bronze-orange)
+![Status](https://img.shields.io/badge/status-stable-success)
 
-## Onde olhar "tá vivo?"
-- `scan_out\pitstop_status.txt`
-- `scan_out\pitstop_status.json`
-- `scan_out\catalog.jsonl` crescendo
+---
 
-## Rodar
-Execute:
-- `.\run_porteiro.ps1`
+## Missão
+Captura determinística de arquivos brutos:
+- SHA256
+- Manifesto append-only
+- Pitstop 30min
+- Barra de progresso
+- Logs de erro
+- Idempotência
 
-## Links úteis (oficiais)
-- tqdm: https://github.com/tqdm/tqdm
-- pdfminer.six (detectar/extrair texto embutido): https://github.com/pdfminer/pdfminer.six
-- PaddleOCR: https://github.com/PaddlePaddle/PaddleOCR
-- DocTR: https://github.com/mindee/doctr
-- GLiNER (NER): https://github.com/urchade/GLiNER
-- Rust (Cargo): https://doc.rust-lang.org/cargo/
+## Escopo
+Drive + Desktop + Documents
 
-## Próxima etapa (Silver)
-- Classificar por Centro de Custos (RegexSet / keywords)
-- Extrair valores (planilha/PDF texto/OCR sob demanda)
-- Consolidar Parquet particionado (Polars)
+---
+
+## Roadmap
+
+### v1.1
+- Centro de Custos (Silver)
+
+### v2.0
+- OCR Inteligente
+
+### v3.0
+- Pipeline Vídeo (YOLO)
+
