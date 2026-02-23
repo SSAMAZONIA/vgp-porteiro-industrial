@@ -1,0 +1,4 @@
+﻿scan_out/
+*.zip
+__pycache__/
+*.pyc
